@@ -1,0 +1,19 @@
+﻿<Window x:Class="DirectControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DirectControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="B_Forward" Content="/\" Margin="205,49,230.429,229.143" FontWeight="Bold" Click="B_Forward_Click"/>
+        <Button x:Name="B_Stop" Content="[  ]" Margin="204,97,230.429,181.143" Click="B_Stop_Click"/>
+        <Button x:Name="B_Right" Content="&gt;" Margin="294,97,140.429,181.143" FontSize="22" Click="B_Right_Click"/>
+        <Button x:Name="B_Left" Content="&lt;" Margin="114,97,320.429,181.143" FontSize="22" Click="B_Left_Click"/>
+        <Button x:Name="B_Reverse" Content="\/" Margin="204,145,230.429,133.143" FontWeight="Bold" Click="B_Reverse_Click"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="63,267,0,0" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="51,239,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
