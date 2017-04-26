@@ -67,3 +67,6 @@ C:\Users\likle\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\
 C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\bin\Debug\MPConBot - Control - PC.exe.config
 C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\obj\Debug\MPConBot - Control - PC.exe
 C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\obj\Debug\MPConBot - Control - PC.pdb
+C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\ATLAS Controller\MPConBot - Control - PC\bin\Debug\MPConBot - Control - PC.exe.config
+C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\ATLAS Controller\MPConBot - Control - PC\obj\Debug\MPConBot - Control - PC.exe
+C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\ATLAS Controller\MPConBot - Control - PC\obj\Debug\MPConBot - Control - PC.pdb
