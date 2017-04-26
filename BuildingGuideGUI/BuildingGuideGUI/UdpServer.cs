@@ -133,7 +133,7 @@ namespace MPConBot
                         //move_random(rand);
                         rcount = 0;
                         SpeechSynthesizer s = new SpeechSynthesizer();
-                        s.Speak("Hello, my name is ATLAS.  Do you need directions?");
+                        s.Speak("Hello, my name is ATLAS.  Do you need directions?  Tap the screen to begin");
                     }
                 }
                 else
@@ -271,7 +271,7 @@ namespace MPConBot
                     if (MainStringData.Equals("Picture"))
                     {
                         image = cap.QueryFrame();
-                        image = image.Resize(960 ,540 , Emgu.CV.CvEnum.INTER.CV_INTER_NN);
+                        image = image.Resize(0.5 , Emgu.CV.CvEnum.INTER.CV_INTER_NN);
                         var MemorySt = new MemoryStream();
                         image.Bitmap.Save(MemorySt, System.Drawing.Imaging.ImageFormat.Jpeg); // take a frame and save it in the memory stream
                         byte[] dataToSend;
