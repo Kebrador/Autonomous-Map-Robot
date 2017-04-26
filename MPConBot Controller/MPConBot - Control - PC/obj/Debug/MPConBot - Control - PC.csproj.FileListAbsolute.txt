@@ -61,3 +61,9 @@ C:\Users\likle\OneDrive\Fall 2016 Projects\Darwin Projects\MPConBot Controller\M
 C:\Users\likle\OneDrive\Fall 2016 Projects\Darwin Projects\MPConBot Controller\MPConBot - Control - PC\bin\Debug\Emgu.CV.dll
 C:\Users\likle\OneDrive\Fall 2016 Projects\Darwin Projects\MPConBot Controller\MPConBot - Control - PC\bin\Debug\Emgu.CV.UI.dll
 C:\Users\likle\OneDrive\Fall 2016 Projects\Darwin Projects\MPConBot Controller\MPConBot - Control - PC\bin\Debug\Emgu.Util.dll
+C:\Users\likle\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\bin\Debug\MPConBot - Control - PC.exe.config
+C:\Users\likle\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\obj\Debug\MPConBot - Control - PC.exe
+C:\Users\likle\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\obj\Debug\MPConBot - Control - PC.pdb
+C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\bin\Debug\MPConBot - Control - PC.exe.config
+C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\obj\Debug\MPConBot - Control - PC.exe
+C:\Users\Kevin\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\MPConBot Controller\MPConBot - Control - PC\obj\Debug\MPConBot - Control - PC.pdb

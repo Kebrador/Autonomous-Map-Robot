@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using L2Bot_Controller;
 using System.Collections.Generic;
 using System.Windows.Threading;
+using System.Speech.Synthesis;
 
 namespace MPConBot
 {
@@ -32,15 +33,14 @@ namespace MPConBot
 
         static public void UDP_main()
         {
-            MyBot = new LoCoMoCo("COM4"); // com port number
+            MyBot = new LoCoMoCo("COM6"); // com port number
             var MainToken = new CancellationTokenSource(); //create token for the cancel
 
             MainServerSocket = new UdpClient(15000); // declare a client
             byte[] MainDataReceived = new byte[1024]; // prepare container for received data
             string MainStringData = "";
             sockets = new List<UdpClient>();
-            captures = new Capture[] { new Capture(0), new Capture(1) };
-            restart_cameras();
+
 
             if (tim == null)
             {
@@ -49,6 +49,17 @@ namespace MPConBot
                 tim.Interval = 1000;
                 tim.Start();
             }
+
+            try
+            {
+                captures = new Capture[] { new Capture(0), new Capture(1) };
+            }
+            catch (Exception)
+            {
+                return;
+            }
+            restart_cameras();
+
 
             while (true) // this while for keeping the main server "listening"
             {
@@ -86,7 +97,7 @@ namespace MPConBot
 
             idle_count++;
 
-            if (idle_count < 60)
+            if (idle_count < 120)
             {
                 if (idle != null)
                     idle.Abort();
@@ -117,18 +128,17 @@ namespace MPConBot
                 if (isidle && autonomous)
                 {
                     rcount++;
-                    if (rand.Next(0,1001) > 1000 - rcount * probmult)
+                    if (rand.Next(0,5001) > 7000 - rcount * probmult)
                     {
-                        move_random(rand);
+                        //move_random(rand);
+                        rcount = 0;
+                        SpeechSynthesizer s = new SpeechSynthesizer();
+                        s.Speak("Hello, my name is ATLAS.  Do you need directions?");
                     }
                 }
                 else
-                {
                     rcount = 0;
-                }
-
             }
-
         }
 
         static void move_random(Random rand)
@@ -261,7 +271,7 @@ namespace MPConBot
                     if (MainStringData.Equals("Picture"))
                     {
                         image = cap.QueryFrame();
-                        //image = image.Resize(0.25, Emgu.CV.CvEnum.INTER.CV_INTER_NN);
+                        image = image.Resize(960 ,540 , Emgu.CV.CvEnum.INTER.CV_INTER_NN);
                         var MemorySt = new MemoryStream();
                         image.Bitmap.Save(MemorySt, System.Drawing.Imaging.ImageFormat.Jpeg); // take a frame and save it in the memory stream
                         byte[] dataToSend;

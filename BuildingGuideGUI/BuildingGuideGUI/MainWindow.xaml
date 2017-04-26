@@ -45,9 +45,9 @@
                 <RowDefinition Height="15*"/>
             </Grid.RowDefinitions>
             <Image x:Name="map_image" Margin="4" Stretch="Fill" Grid.Row="2" Grid.ColumnSpan="3" Source="Taubman Complex 3FloorPlan.jpg"/>
-            <Button x:Name="FloorUp" Content="Floor Up" Grid.Column="2" Margin="2,4,4,0" Click="FloorUp_Click" IsEnabled="False" FontSize="18"/>
+            <Button x:Name="FloorUp" Content="Floor Up" Grid.Column="2" Margin="2,4,4,0" Click="FloorUp_Click" IsEnabled="False" FontSize="18" Visibility="Hidden"/>
             <Image x:Name="overlay_image" Margin="4" Grid.Row="2" Grid.ColumnSpan="3"/>
-            <Button x:Name="FloorDown" Content="Floor Down" Margin="2,4,2,0" Grid.Column="1" Click="FloorDown_Click" IsEnabled="False" FontSize="18"/>
+            <Button x:Name="FloorDown" Content="Floor Down" Margin="2,4,2,0" Grid.Column="1" Click="FloorDown_Click" IsEnabled="False" FontSize="18" Visibility="Hidden"/>
             <Button  x:Name="dropdown_button" Click="dropdown_click" Margin="4,4,2,0" Content="More Options" FontSize="18" >
                 <Button.ContextMenu>
                     <ContextMenu >
@@ -108,9 +108,10 @@
             </Grid>
             <TextBlock x:Name="Tblock_bot" Margin="4,0,2,4" Grid.Row="3" TextWrapping="Wrap" Text="TextBlock" Grid.ColumnSpan="2" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" FontSize="18"/>
             <Button x:Name="campus_button" Content="Campus Map" Grid.Column="2" Margin="2,0,4,4" Grid.Row="3" Click="campus_button_Click"/>
+            <Label x:Name="l_location" Content="Taubman Complex 3F" Grid.Column="1" Margin="8" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"/>
         </Grid>
         <Image x:Name="RoboFace_png" Grid.Column="2" Margin="0,4" Source="RoboFace.png" Stretch="Uniform"/>
-        <Button x:Name="button" Background="White" Click="button_Click_1" Grid.RowSpan="2" Grid.ColumnSpan="3" Margin="0">
+        <Button x:Name="button" Background="White" Click="button_Click_1" Grid.RowSpan="2" Margin="0" Grid.ColumnSpan="3">
             <Image x:Name="RoboFace_png1" Source="RoboFace.png" Stretch="Uniform"/>
         </Button>
     </Grid>

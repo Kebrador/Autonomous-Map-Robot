@@ -89,7 +89,7 @@ namespace BuildingGuideGUI
             try
             { 
                 map_image.Stretch = Stretch.Fill;
-                map_image.Source = new BitmapImage(new Uri(@"C:\Users\"+ Environment.UserName + @"\OneDrive\Fall 2016 Projects\Darwin Projects\BuildingGuideGUI\Asset" + path));//replace with local path to asset folder
+                map_image.Source = new BitmapImage(new Uri(@"C:\Users\"+ Environment.UserName + @"\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\BuildingGuideGUI\Asset" + path));//replace with local path to asset folder
             }
             catch (UriFormatException) { overlay_image.Source = new BitmapImage(); };
         }
@@ -100,7 +100,7 @@ namespace BuildingGuideGUI
             {
                 
                 overlay_image.Stretch = Stretch.Fill;
-                overlay_image.Source = new BitmapImage(new Uri(@"C:\Users\" + Environment.UserName + @"\OneDrive\Fall 2016 Projects\Darwin Projects\BuildingGuideGUI\Asset" + path));//replace with local path to asset folder
+                overlay_image.Source = new BitmapImage(new Uri(@"C:\Users\" + Environment.UserName + @"\OneDrive\Fall 2016 Projects\Darwin Projects\Autonomous-Map-Robot\BuildingGuideGUI\Asset" + path));//replace with local path to asset folder
             }
             catch (UriFormatException) { overlay_image.Source = new BitmapImage(); };
         }
@@ -597,12 +597,15 @@ namespace BuildingGuideGUI
         {
             if (campus_button.Content.ToString() == "Campus Map")
             {
-                campus_button.Content = "Building Map";
+                campus_button.Content = "Taubman Complex \n  Third Floor Map";
+                l_location.Content = "Campus";
                 campusmap();
             }
             else
             {
                 campus_button.Content = "Campus Map";
+
+                l_location.Content = "Taubman Complex 3F";
                 buildingmap();
             }
         }
